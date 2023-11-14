@@ -40,14 +40,14 @@ app.use('/api/v1/inventory', require('./routes/inventoryRoutes'));
 app.use('/api/v1/analytics', require('./routes/analyticsRoute'));
 app.use('/api/v1/admin', require('./routes/adminRoutes'));
 
-// DEPLOYMENT :- STATIC FOLDER its a middleware
-app.use(express.static(path.join(__dirname,'./client/build')))
-// STATIC ROUTE
-app.get('*',function(req,res){
-    res.sendFile(path.join(__dirname,'./client/build/index.html'));
-});
+// // DEPLOYMENT :- STATIC FOLDER its a middleware
+// app.use(express.static(path.join(__dirname,'./client/build')))
+// // STATIC ROUTE
+// app.get('*',function(req,res){
+//     res.sendFile(path.join(__dirname,'./client/build/index.html'));
+// });
 
-// http://localhost:8080/tet
+// // http://localhost:8080/tet
 
 
 // port
